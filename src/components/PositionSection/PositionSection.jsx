@@ -1,11 +1,11 @@
 import React from 'react';
-import { sampleData } from '../../api/jsondata';
+//import { sampleData } from '../../api/jsondata';
 import PlayerCard from '../PlayerCard/PlayerCard';
 import './PositionSection.css';
 
 const PositionSection = (props) => {
-    const { position } = props;
-    const playerData = sampleData.filter(player => player.Position === position)
+    const { position, players } = props;
+    const playerData = players.filter(player => player.Position === position)
     
     return (
         <>

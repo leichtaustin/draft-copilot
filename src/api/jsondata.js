@@ -2,15 +2,18 @@ const API_KEY = '6787cecc900f4df7a6a119e6b6d7982a';
 const API_ROOT = 'https://api.sportsdata.io/v3/mlb/projections/json/PlayerSeasonProjectionStats/';
 const season = '2022';
 
-/*const getPlayerData = async () => {
+
+export const getPlayerData = async () => {
     const response = await fetch(`${API_ROOT}${season}?key=${API_KEY}`);
     const json = await response.json();
-    //console.log(json[1])
-    return json;
+    return json.data;
 };
-*/
 
-export const sampleData = [
+
+
+
+
+/*export const sampleData = [
     {StatID:3499380,
     TeamID:1,
     PlayerID:10002094,
@@ -93,4 +96,4 @@ export const sampleData = [
     SluggingPercentage:0.5,
     TotalBases:288.5,},
 
-]
+]*/
